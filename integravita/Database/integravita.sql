@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Mar 25, 2018 at 02:24 AM
+-- Generation Time: Mar 26, 2018 at 12:59 PM
 -- Server version: 5.5.38-0ubuntu0.14.04.1
 -- PHP Version: 5.5.9-1ubuntu4.5
 
@@ -273,6 +273,35 @@ INSERT INTO `user1` (`medicine_name`, `quantity`, `price`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `user10`
+--
+
+CREATE TABLE IF NOT EXISTS `user10` (
+  `medicine_name` varchar(255) NOT NULL,
+  `quantity` int(11) NOT NULL,
+  `price` float NOT NULL,
+  PRIMARY KEY (`medicine_name`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `user10`
+--
+
+INSERT INTO `user10` (`medicine_name`, `quantity`, `price`) VALUES
+('Abilify', 25, 4),
+('Actos', 43, 3),
+('Advair Diskus', 20, 4),
+('Crestor', 55, 3),
+('Epogen', 22, 3),
+('Lipitor', 30, 7),
+('Nexium', 69, 6),
+('Plavix', 0, 6),
+('Seroquel', 93, 4),
+('Singulair', 77, 4);
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `user2`
 --
 
@@ -317,8 +346,8 @@ CREATE TABLE IF NOT EXISTS `user3` (
 --
 
 INSERT INTO `user3` (`medicine_name`, `quantity`, `price`) VALUES
-('Abilify', 21, 4),
-('Actos', 875, 40),
+('Abilify', 11, 4),
+('Actos', 874, 40),
 ('Advair Diskus', 20, 4),
 ('Crestor', 55, 3),
 ('Epogen', 22, 3),
@@ -330,6 +359,18 @@ INSERT INTO `user3` (`medicine_name`, `quantity`, `price`) VALUES
 ('Singulair', 77, 4),
 ('torex', 20, 100),
 ('xyz', 815, 8);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `user35o`
+--
+
+CREATE TABLE IF NOT EXISTS `user35o` (
+  `medicine_name` varchar(255) DEFAULT NULL,
+  `quantity` int(11) DEFAULT NULL,
+  `price` float DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -385,7 +426,7 @@ INSERT INTO `user5` (`medicine_name`, `quantity`, `price`) VALUES
 ('Advair Diskus', 20, 4),
 ('Crestor', 55, 3),
 ('Epogen', 22, 3),
-('Lipitor', 30, 10),
+('Lipitor', 20, 10),
 ('Nexium', 69, 6),
 ('Plavix', 61, 6),
 ('Seroquel', 93, 4),
@@ -506,47 +547,6 @@ INSERT INTO `user9` (`medicine_name`, `quantity`, `price`) VALUES
 ('Plavix', 61, 6),
 ('Seroquel', 93, 4),
 ('Singulair', 77, 4);
-
--- --------------------------------------------------------
-
---
--- Table structure for table `user10`
---
-
-CREATE TABLE IF NOT EXISTS `user10` (
-  `medicine_name` varchar(255) NOT NULL,
-  `quantity` int(11) NOT NULL,
-  `price` float NOT NULL,
-  PRIMARY KEY (`medicine_name`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `user10`
---
-
-INSERT INTO `user10` (`medicine_name`, `quantity`, `price`) VALUES
-('Abilify', 25, 4),
-('Actos', 43, 3),
-('Advair Diskus', 20, 4),
-('Crestor', 55, 3),
-('Epogen', 22, 3),
-('Lipitor', 30, 7),
-('Nexium', 69, 6),
-('Plavix', 0, 6),
-('Seroquel', 93, 4),
-('Singulair', 77, 4);
-
--- --------------------------------------------------------
-
---
--- Table structure for table `user35o`
---
-
-CREATE TABLE IF NOT EXISTS `user35o` (
-  `medicine_name` varchar(255) DEFAULT NULL,
-  `quantity` int(11) DEFAULT NULL,
-  `price` float DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
